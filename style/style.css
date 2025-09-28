@@ -1,0 +1,530 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Proxima Nova, -apple-system, Roboto, Arial, sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: #1E1E1E;
+}
+
+a:hover{
+    color: white;
+}
+form{
+    background-color: #0077B6;
+}
+.header-parte1{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 15px;
+    align-items:center;
+}
+.header-parte1 img{
+        width: 20vw;
+        height: auto;
+}
+.header-parte1-buscador{
+    margin: 0px auto;
+    background-color: #0077B6;
+    form{
+        display: flex;
+        justify-content:center;
+        gap:0;
+    }
+}
+.header-parte1-buscador-barra{
+    height: 30px;
+    width: 30vw;
+    padding: 7px 10px;
+    min-width: 60px;
+    border: 2px solid transparent;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-right: 0;
+    transition: width 0.3s ease-in-out;
+}
+.header-parte1-buscador-barra:hover{
+    width: 31vw;
+    border: #00B394 2px solid;
+}
+.header-parte1-buscador-buscar{
+    height: 48px;
+    background-color: #F5F5F5;
+    border: 2px solid transparent;
+    border-bottom-right-radius:50%;
+    border-top-right-radius: 50%;
+    margin-left: 0;
+    .header-parte1-buscador-buscar-circulo{
+        border-radius: 50%;
+        color: white;
+        background-color: #00B394;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(1);
+        transition: transform 0.4s ease-in;
+    }
+}
+.header-parte1-buscador-buscar-circulo:hover{
+    transform: scale(1.2);
+}
+
+.header-parte2{
+    display: flex;
+    justify-content: space-between;
+    background-color: #4997CF;
+    margin-top: 2px;
+    border-radius: 5px;
+}
+.header-parte2-usuarioYcompras-ul i{
+    color: whitesmoke;
+    width: 2vw;
+}
+.header-parte2-nav-ul{   
+    display: flex;
+    gap: 55px;
+    justify-content: flex-start;
+    padding: 0px 10px;   
+}
+.header-parte2-nav-ul li{
+    a{
+        color: white;
+        font-weight: 500;
+        transition: color 0.3s ease-out;
+    }
+    border-bottom: transparent solid 2px;
+    transition: border 0.3s ease-out;
+}
+.header-parte2-nav-ul li:hover{
+    a{
+        color: #00B394;
+    }
+    border-bottom: #00B394 solid 2px;
+}
+.header-parte2-usuarioYcompras-ul{
+    display: flex;
+    padding: 0px 10px;
+    gap: 10px;
+    justify-content: flex-start;
+    
+}
+.header-parte2-usuarioYcompras-li{
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-parte2-usuarioYcompras-li:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+header{
+    margin-left:0 150px;
+    background-color: #0077B6;
+    padding:7px 10px;
+    border-radius: 10px 0;
+    ul{
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+.sectionImagenes-div{
+    width: 90vw;
+    height:60vh;
+    background-color: red;
+    margin: 0 auto;
+}
+/*parte de categorias seleccionadas*/
+.div-destacado-subtitulo{
+        max-width: 700px;
+        margin: 50px auto;
+    h2{
+        color: RGB(42,157,142) ;
+        text-align: center;
+        font-size: 30px;
+        margin: 10px;
+    }  
+    p{
+        text-align: center;
+        color: #5079A5;
+    }
+}
+
+.div-destacado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.destacado{
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+.destacado a{
+    padding: 5px 35px;
+    background-color: #2A9D8E;
+    color:#F5F5F5;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.destacado a:hover{
+    cursor: pointer;
+    color: #F5F5F5;
+    background-color: #00274E;
+}
+.destacado-div{
+    position: relative;
+    overflow: hidden;
+    padding: 35px 10px;
+    background: #F2F9F7;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: #D9EFE8 2px solid;
+    border-radius: 25px;
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 5px;   
+    .bola{
+        position: absolute;
+        background-color:#D9EFE8;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        top:-20px;
+        right: -15px;
+        
+    }
+    img{
+        width: 65px;
+    }
+
+    h3{
+        color: #005B9F;
+    }
+    p{
+        color: #509BC5;
+        font-weight: 300;
+    }
+    transition: transform 0.4s ease;
+}
+.destacado-div:hover{
+    transform: scale(1.05);
+    .bola{
+        width: 90px;
+        height: 90px;
+    }
+}
+/*parte de las marcas alidas*/
+.marcas{
+    max-width: 85vw;
+    margin: 30px auto;
+    border-top: #00274E 6px solid;
+    border-image: linear-gradient(to left, rgba(0,39,78,0.9), rgba(42,157,142,0.9)) 1; 
+    padding: 2px 20px;
+    .marca-subtitulo{
+        max-width: 700px;
+        margin: 50px auto;
+    }
+    h2{
+        color: RGB(42,157,142) ;
+        text-align: center;
+        font-size: 30px;
+        margin: 10px;
+    }  
+    p{
+        text-align: center;
+        color: #5079A5;
+    }
+}
+.marcas-div{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;   
+    justify-content: space-between;
+    gap: 10px;
+}
+.marca{
+    img{
+    object-fit: contain;
+    width: 150px;
+    height: 100px;
+    padding-left:3px;
+    border-left: #00274E solid 5px;
+}
+    width: 300px;
+    box-shadow:rgba(0, 0, 0, 0.2) 4px 4px 8px 0px;
+    padding: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: transform 0.4s ease;
+    h3{
+        width: 70px;
+    }
+}
+
+.marca:hover{
+    color: #00274E;
+    transform: scale(1.05);
+    border-radius: 10px;
+    border-bottom: 2px solid; 
+    border-image: linear-gradient(to left, rgba(0,39,78,0.9), rgba(42,157,142,0.9)) 1; 
+    background: radial-gradient(circle, rgba(0,39,78,0.4), rgba(42,157,142,0.4));
+
+    img{
+    object-fit: contain;
+    width: 170px;
+ }
+
+}
+/* para mostrar los algunos productos*/
+.algunosProductos{
+    width: 85vw;
+    background-color: #FAFCFC;
+    margin: 5px auto;
+    padding: 7px 10px;
+    border-radius: 6px;
+    h2{
+        color:rgba(0,39,78); 
+        font-size: 30px;
+        margin: 10px;
+    }  
+    .algunosProductos-titulo p{
+        color: #5079A5;
+    }
+}
+
+.productos-index{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    
+    
+}
+
+
+.productos-index-producto{
+    border: transparent solid 2px;
+    transition: border 0.4s ease;
+    width: 225px;
+    height: 390px;
+    background-color: #F8F8F8;
+    padding: 20px 25px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    .circulo{
+        position:absolute;
+        top:15px;
+        right: 25px;
+        border: 0.5px solid rgba(42,157,142,0.9);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .productos-index-producto-EsNuevo{
+        position:absolute;
+        top:7px;
+        left: 25px;
+        padding-left: 7px;
+        padding-right: 7px;
+        height: 25px;
+        background-color: #00B394;
+        color: white;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+    }
+    .productos-index-producto-EsNuevoNO{
+        display: none;
+    }
+
+
+    i{
+        font-size: 15px;
+        color: rgba(0,39,78,0.4);
+    }
+    .productos-index-producto-imagen{
+        margin-bottom: 30px;
+        transition: margin-bottom 0.3s ease;
+    }
+    
+}
+.productos-index-producto-imagen-bg{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-size: contain;   /* Ajusta la imagen dentro del div sin recortarla */
+    background-repeat: no-repeat; /* Para que no se repita */
+    background-position: center;  /* Centrada */
+    transition: width 0.6s ease,height 0.6s ease,background-image 1s ease;
+}
+.productos-index-producto-imagen-bg-CamisetaRealMadrid{
+    background-image: url(/images/index/algunosProductos/Adidas-realMadrid-1.png);
+}
+.productos-index-producto-imagen-bg-Nike-MercurialVapor16{
+    background-image: url(/images/index/algunosProductos/Nike-MercurialVapor16-1.png);
+}
+.productos-index-producto-imagen-bg-venum-UFCSportsCap{
+        background-image: url(/images/index/algunosProductos/venum-UFCSportsCap-1.png);
+}
+.productos-index-producto-imagen-bg-underarmour-MorralHustle6Backpack{
+        background-image: url(/images/index/algunosProductos/underarmour-MorralHustle6.0Backpack-1.png);
+}
+.productos-index-producto-imagen-bg-Adidas-ChaquetadeportivaClassicsSST{
+        background-image: url(/images/index/algunosProductos/Adidas-ChaquetadeportivaClassicsSST-1.png);
+    }
+.productos-index-producto-imagen-bg-Nike-AirJordan4RM{
+        background-image: url(/images/index/algunosProductos/Nike-AirJordan4RM-1.png);
+    }
+.productos-index-producto-imagen-bg-Adidas-CamisetadeTenisClubKids{
+        background-image: url(/images/index/algunosProductos/Adidas-CamisetadeTenis\ ClubKids-1.png);
+    }
+.productos-index-producto-imagen-bg-Nike-SportswearClub{
+        background-image: url(/images/index/algunosProductos/Nike-SportswearClub-1.png);
+}
+
+.productos-index-producto-cuerpo{
+    
+    h3{
+        font-size: 15px;
+        margin-top: 0;
+    }
+    .productos-index-producto-cuerpo-tags{
+        a{
+            padding: 5px;
+            font-size: 13px;
+            color: rgb(42,157,142);
+            background-color: #DFF1EE;
+            margin: 3px;
+            border-radius: 4px;
+        }
+    }
+    .precios{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .precio{
+            font-size: 23px;
+            font-weight: 700;
+            color: #005B9F;
+        }
+        .precioAntes{
+            font-size: 17px;
+            font-weight: 400;
+            color: #507986;
+            text-decoration:line-through;
+        }
+        
+    }
+    .productos-index-producto-cuerpo-enlaceProducto-div{
+        display: flex;
+        justify-content: center;
+    }
+    .productos-index-producto-cuerpo-enlaceProducto{
+        color: white;
+        text-align: center;
+        background-color: #005B9F;
+        padding: 5px;
+        border-radius: 11px;
+        display: inline-block;
+        width: 200px;
+        box-shadow: none;
+        transition: box-shadow 0.3s ease-in-out;
+        i{
+            color: white;
+        }
+        }
+    p{
+            margin-top: 10px;
+            margin-bottom: 15px;
+    }
+
+}
+
+.productos-index-producto:hover{
+    border: #C6D9E6 solid 2px;
+    .productos-index-producto-imagen-bg{
+        width: 220px;
+        height: 220px;
+        margin: auto;
+        background-size: contain;   /* Ajusta la imagen dentro del div sin recortarla */
+        background-repeat: no-repeat; /* Para que no se repita */
+        background-position: center;  /* Centrada */
+    }
+    
+    .productos-index-producto-imagen-bg-CamisetaRealMadrid{
+        background-image: url(/images/index/algunosProductos/Adidas-realMadrid-2.png);
+    }
+
+    .productos-index-producto-imagen-bg-Nike-MercurialVapor16{
+        background-image: url(/images/index/algunosProductos/Nike-MercurialVapor16-2.png);
+    }
+    .productos-index-producto-imagen-bg-venum-UFCSportsCap{
+        background-image: url(/images/index/algunosProductos/venum-UFCSportsCap-2.png);
+    }
+    .productos-index-producto-imagen-bg-underarmour-MorralHustle6Backpack{
+        background-image: url(/images/index/algunosProductos/underarmour-MorralHustle6.0Backpack-2.png);
+    }
+    .productos-index-producto-imagen-bg-Adidas-ChaquetadeportivaClassicsSST{
+        background-image: url(/images/index/algunosProductos/Adidas-ChaquetadeportivaClassicsSST-2.png);
+    }
+    .productos-index-producto-imagen-bg-Nike-AirJordan4RM{
+        background-image: url(/images/index/algunosProductos/Nike-AirJordan4RM-2.png);
+    }
+    .productos-index-producto-imagen-bg-Adidas-CamisetadeTenisClubKids{
+        background-image: url(/images/index/algunosProductos/Adidas-CamisetadeTenis\ ClubKids-2.png);
+    }
+    .productos-index-producto-imagen-bg-Nike-SportswearClub{
+        background-image: url(/images/index/algunosProductos/Nike-SportswearClub-2.png);
+    }
+
+    .productos-index-producto-cuerpo{
+        background-color: #F8F8F8;
+    }
+    .productos-index-producto-imagen{
+        margin-bottom: 10px;
+    }   
+}
+
+.productos-index-producto-cuerpo-enlaceProducto:hover{
+        box-shadow: #005B9F 2px 2px 3px 1px;
+    }
+.circulo:hover{
+        background-color: #C6D9E6;
+        i{
+            color:#F8F8F8;
+        }
+    }
