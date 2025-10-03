@@ -590,3 +590,139 @@ form{
         font-size: 75px;
     }
 }
+/*seccion de footer*/
+.footer{
+    width: 100%;
+    margin-top: 25px;
+    padding-bottom:25px;
+    padding-top:30px;
+    background-color: #1A1A1A;
+}
+.footer-principales{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap:20px;
+    flex-wrap: wrap;
+}
+.footer-principales-section{
+    min-height: 250px;
+    h2{
+        font-weight: 700;
+        color: white;
+    }
+    ul{
+        padding-inline-start: 0px;
+        list-style: none;
+    }
+    
+    li a{
+        color: #F5F5F5;
+        margin-top: 15px;
+        border-bottom: transparent 2px solid;
+        
+        transition: border-bottom 0.3s ease-in-out, color 0.2s ease-in;
+    }
+    .footer-principales-section-ul li a:hover{
+        border-bottom: rgb(42,157,142) 2px solid;
+        color:rgb(42,157,142);
+    }
+}
+
+.footer-copyright{
+    color: #6494AF;
+    border-top: #6494AF 1px solid;
+    font-size: 12px;
+    margin-top: 55px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 10px;
+    gap: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-principales-section-siguenos{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    font-size: 20px;
+    li{
+        position: relative;
+    }
+}
+.footer-principales-section-siguenos-whatsapp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition:background-color 0.3s ease-in-out ;
+}
+.footer-principales-section-siguenos-whatsapp:hover{
+    background-color: #50CB5E;
+}
+
+.footer-principales-section-siguenos-facebook{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition:background-color 0.3s ease-in-out ;
+}
+.footer-principales-section-siguenos-facebook:hover{
+    background-color: #4267B2;
+}
+
+.footer-principales-section-siguenos-instagram{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition:background-color 0.3s ease-in-out ;
+}
+.footer-principales-section-siguenos-instagram:hover{
+    background-color: #E1306C;
+}
+.footer-principales-section-siguenos-linkedin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+    background-color: transparent;
+    transition:background-color 0.3s ease-in-out ;
+}
+.footer-principales-section-siguenos-linkedin:hover{
+    background-color: #0A66C2;
+}
+.footer-principales-section-siguenos-github{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition:background-color 0.3s ease-in-out ;
+    i{
+        color: white;
+        transition:color 0.3s ease-in-out ;
+    }
+}
+.footer-principales-section-siguenos-github:hover{
+    background-color: white;
+    i{
+        color: black;
+    }
+}
