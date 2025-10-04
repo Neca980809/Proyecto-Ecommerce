@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/usuario/login-style.css">
+    <title>NECA sports - login</title>
+</head>
+<body>
+    <header>
+        <div class="header header-parte1">
+            <a href="/index.html">
+                <img src="/images/logo.png" alt="logo">
+            </a>
+            
+            <div class="header-parte1-buscador">
+                <form>
+                    <input type="text" class="header-parte1-buscador-barra" placeholder="Buscar Productos, marcas, deporte y mas..." >
+                    <button type="button" class="header-parte1-buscador-buscar">
+                        <div class="header-parte1-buscador-buscar-circulo">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </button>
+                </form>
+            </div>
+            <div class="header-parte2-usuarioYcompras">
+                    <ul class="header-parte2-usuarioYcompras-ul">
+                        <li>
+                            <a class="header-parte2-usuarioYcompras-compras header-parte2-usuarioYcompras-li" href="/compras/index.html">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="header-parte2-usuarioYcompras-carrito header-parte2-usuarioYcompras-li" href="/carrito/index.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="header-parte2-usuarioYcompras-favoritos header-parte2-usuarioYcompras-li" href="/favoritos/index.html">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="header-parte2-usuarioYcompras-notificacion header-parte2-usuarioYcompras-li" href="/notificacion/index.html">
+                                <i class="fa-solid fa-bell"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="header-parte2-usuarioYcompras-usuario header-parte2-usuarioYcompras-li" href="/usuario/login.html">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </li>
+                    </ul>
+            </div>         
+        </div>
+        <div class="header header-parte2">
+            <nav class="header-parte2-nav">
+                <ul class="header-parte2-nav-ul">
+                    <li><a href="/novedades/index.html" class="header-parte2-nav">Novedades</a></li>
+                    <li><a href="/ofertas/index.html" class="header-parte2-nav">Ofertas</a></li>
+                    <li><a href="/marcas/index.html" class="header-parte2-nav">Marcas</a></li>
+                    <li><a href="/deporte/index.html" class="header-parte2-nav">Deporte</a></li>
+                    <li><a href="/categoria/index.html" class="header-parte2-nav">Categoria</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <!-- seccion de login-->
+    <section class="login">
+        <div class="login-div">
+            <div class="login-div-logo">
+                <img src="logo.png" alt="logo Neca sports">
+            </div>
+            <div class="login-div-iniciaSesion">
+                <h2>Inicia sesión o crea una cuenta</h2>
+                <form class="login-div-iniciaSesion-form">
+                    <label for="login-email">Introduce tu correo electrónico</label>
+                    <input type="email" name="login-email" id="login-email" maxlength="80" minlength="10" required placeholder="nombreusuario@correo.com">
+                    <div class="login-div-iniciaSesion-contraseña">
+                        <label for="login-password">Contraseña</label>
+                        <a href="">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    <input type="password" name="login-password" id="login-password" minlength="5" required placeholder="contraseña">
+
+                    <button type="submit">Iniciar sesión</button>
+
+                    <p>Al continuar, aceptas las <a href="">Condiciones de uso</a> y el <a href="">Aviso de privacidad</a> de ego Sports.</p>
+                </form>
+                
+            </div>
+            <div class="login-div-crearCuenta">
+                <div class="login-div-crearCuenta-linea">
+                    <div class="login-div-crearCuenta-linea1">
+                        <p>hola soy falco siu</p>
+                    </div>
+                    <p>¿Nuevo en Neca Sports?</p>
+                    <div class="login-div-crearCuenta-linea2">
+                        <p>hola soy falco siu</p>
+                    </div>
+                </div>
+                <a href="/usuario/registro.html" class="login-div-crearCuenta-nuevo">Crear tu cuenta de Neca Sports</a>
+            </div>
+        </div>
+    </section>
+        <!-- seccion de footer-->
+     <footer>
+        <div class="footer">
+            <div class="footer-principales">
+                <section class="footer-principales-section">
+                    <h2>Compra y Descubre</h2>
+                    <ul class="footer-principales-section-ul">
+                        <li><a href="">Calzado Deportivo</a></li>
+                        <li><a href="">Ropa Deportiva</a></li>
+                        <li><a href="">Accesorios</a></li>
+                        <li><a href="">Equipamiento</a></li>
+                        <li><a href="">Ofertas Especiales</a></li>
+                    </ul>
+                </section>
+                <section class="footer-principales-section">
+                    <h2>Soporte</h2>
+                    <ul class="footer-principales-section-ul">
+                        <li><a href="">Centro de Servicio</a></li>
+                        <li><a href="">Guía de Tallas</a></li>
+                        <li><a href="">Envíos y Devoluciones</a></li>
+                        <li><a href="">Términos y Condiciones</a></li>
+                        <li><a href="">Métodos de Pago</a></li>
+                    </ul>
+                </section>
+                <section class="footer-principales-section">
+                    <h2>Acerca de Nosotros</h2>
+                    <ul class="footer-principales-section-ul">
+                        <li><a href="">Nuestra Historia</a></li>
+                        <li><a href="">Política de Privacidad</a></li>
+                        <li><a href="">Responsabilidad Social</a></li>
+                        <li><a href="">Sustentabilidad</a></li>
+                        <li><a href="">Trabaja con Nosotros</a></li>
+                    </ul>
+                </section>
+                <section class="footer-principales-section">
+                    <h2>Contacto</h2>
+                    <ul class="footer-principales-section-ul">
+                        <li><a href="">Servicio de Soporte</a></li>
+                        <li><a href="">Correo Electrónico</a></li>
+                        <li><a href="">Teléfono</a></li>
+                    </ul>
+                </section>
+                <section class="footer-principales-section">
+                    <h2>Síguenos</h2>
+                    <ul class="footer-principales-section-siguenos">
+                        <li>
+                            <a href="" class="footer-principales-section-siguenos-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/nickesteban.cohechaarango" target="_blank" class="footer-principales-section-siguenos-facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/esteban_cohechaa" target="_blank" class="footer-principales-section-siguenos-instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/nick-esteban-cohecha-arango-80848024b" target="_blank" class="footer-principales-section-siguenos-linkedin">
+                               <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Neca980809" target="_blank" class="footer-principales-section-siguenos-github">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="footer-copyright">
+                    <p>Copyright © 2025 - 2025 NECA sports. Todos los derechos reservados</p>
+                    <p>Colombia/Español</p>
+            </div>
+        </div>
+     </footer>
+</body>
+</html>

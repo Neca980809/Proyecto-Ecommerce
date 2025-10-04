@@ -1,0 +1,106 @@
+.login-div-logo{
+    width: 100px;
+    margin: 5px auto;
+}
+
+
+.login-div{
+    max-width: 450px;
+    min-height: 460px;
+    margin: 15px auto;
+}
+.login-div-iniciaSesion-form{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    .login-div-iniciaSesion-contraseña{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        a{
+            font-size: 12px;
+        }
+    }
+    button{
+        height: 50px;
+        background-color: #00B394;
+        color: aliceblue;
+        font-size: 18px;
+        border: 3px solid transparent;
+        border-radius: 7px;
+    }
+    a{
+        color:#00B394;
+        border-bottom:  transparent 1px solid;
+        transition: border-bottom 0.2s ease-out;
+    }
+    a:hover{
+        border-bottom: #00B394 1px solid;
+    }
+    input{
+        padding: 2px 10px;
+        height: 35px;
+        border-radius: 8px;
+        background-color: #F8F8F8;
+        border: 2px solid #ccc; 
+        outline: none;
+    }
+    input:focus{
+        border: 2px solid #00B394; 
+    }
+}
+
+.login-div-iniciaSesion{
+    background-color: #F8F8F8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 1px #d8d8d8;
+    p{
+        font-size: 12px;
+    }
+    label{
+        font-size: 15px;
+    }
+}
+.login-div-crearCuenta{
+    
+    form{
+        background-color: transparent;
+    }
+    p{
+        color: #507986;
+        font-size: 13px;
+    }
+    .login-div-crearCuenta-linea{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+    .login-div-crearCuenta-linea1{
+        p{
+            color: transparent;
+            text-decoration: line-through #507986;
+        }
+    }
+    .login-div-crearCuenta-linea2{
+        p{
+            color: transparent;
+            text-decoration: line-through #507986;
+        }
+    }
+    .login-div-crearCuenta-nuevo{
+        background: linear-gradient(to right, #005C9F, #00B194,#009162);
+        width: 100%;
+        height: 50px;
+        color: aliceblue;
+        font-size: 18px;
+        border: 3px solid transparent;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
