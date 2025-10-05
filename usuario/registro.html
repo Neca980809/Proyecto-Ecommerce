@@ -83,28 +83,80 @@
                     <input type="text" name="registro-apellidos" id="registro-apellidos" maxlength="80" minlength="2" required placeholder="Introduce tus apellidos">
                     <label for="registro-email">Correo electrónico</label>
                     <input type="email" name="registro-email" id="registro-email" maxlength="80" minlength="10" required placeholder="Introduce tu correo electrónico">
-                    <div class="login-div-iniciaSesion-contraseña">
-                        <label for="login-password">Contraseña</label>
-                        <a href="">¿Olvidaste tu contraseña?</a>
-                    </div>
-                    <input type="password" name="login-password" id="login-password" minlength="5" required placeholder="contraseña">
-
-                    <button type="submit">Iniciar sesión</button>
-
-                    <p>Al continuar, aceptas las <a href="">Condiciones de uso</a> y el <a href="">Aviso de privacidad</a> de ego Sports.</p>
+                    <label for="registro-password">Contraseña</label>
+                    <input type="password" name="registro-password" id="registro-password" minlength="5" required placeholder="Introduce tu contraseña">
+                    <label for="registro-password-repetir">Confirmar contraseña</label>
+                    <input type="password" name="registro-password-repetir" id="registro-password-repetir" minlength="5" required placeholder="Confirma contraseña">
+                    <label for="registro-telefono">Telefono</label>
+                    <input type="number" name="registro-telefono" id="registro-telefono" minlength="5" placeholder="Introduce tu numero celular">
+                    <label for="registro-ciudad">Selecciona tu municipio o el mas cercano</label>
+                    <select name="registro-ciudad" id="registro-ciudad" required>
+                        <option value="N/A"> </option>
+                        <option value="Armenia">Armenia</option>
+                        <option value="Barrancabermeja">Barrancabermeja</option>
+                        <option value="Barranquilla">Barranquilla</option>
+                        <option value="Bogotá">Bogotá</option>
+                        <option value="Bucaramanga">Bucaramanga</option>
+                        <option value="Buga">Buga</option>
+                        <option value="Cali">Cali</option>
+                        <option value="Cartagena">Cartagena</option>
+                        <option value="Chía">Chía</option>
+                        <option value="Cúcuta">Cúcuta</option>
+                        <option value="Duitama">Duitama</option>
+                        <option value="Florencia">Florencia</option>
+                        <option value="Fusagasugá">Fusagasugá</option>
+                        <option value="Girardot">Girardot</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Ibagué">Ibagué</option>
+                        <option value="Ipiales">Ipiales</option>
+                        <option value="Jamundí">Jamundí</option>
+                        <option value="Leticia">Leticia</option>
+                        <option value="Manizales">Manizales</option>
+                        <option value="Mariquita">Mariquita</option>
+                        <option value="Medellín">Medellín</option>
+                        <option value="Mompox">Mompox</option>
+                        <option value="Montería">Montería</option>
+                        <option value="Murillo">Murillo</option>
+                        <option value="Neiva">Neiva</option>
+                        <option value="Pamplona">Pamplona</option>
+                        <option value="Pasto">Pasto</option>
+                        <option value="Pereira">Pereira</option>
+                        <option value="Popayán">Popayán</option>
+                        <option value="Riohacha">Riohacha</option>
+                        <option value="SanAndrés">San Andrés y Providencia</option>
+                        <option value="SanAntero">San Antero</option>
+                        <option value="SantaMarta">Santa Marta</option>
+                        <option value="SantaféAntioquia">Santafé de Antioquia</option>
+                        <option value="Sevilla">Sevilla</option>
+                        <option value="Sincelejo">Sincelejo</option>
+                        <option value="Sogamoso">Sogamoso</option>
+                        <option value="Tabio">Tabio</option>
+                        <option value="Tocancipá">Tocancipá</option>
+                        <option value="Tolú">Tolú</option>
+                        <option value="Tuluá">Tuluá</option>
+                        <option value="Tumaco">Tumaco</option>
+                        <option value="Tunja">Tunja</option>
+                        <option value="Valledupar">Valledupar</option>
+                        <option value="Villavicencio">Villavicencio</option>
+                        <option value="Yopal">Yopal</option>
+                        <option value="Zipaquirá">Zipaquirá</option>
+                    </select>
+                    <label for="registro-genero">Selecciona tu genero</label>
+                    <select name="registro-genero" id="registro-genero" required>
+                        <option value="N/A"> </option>
+                        <option value="Femenino">Femenino</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="N/A">Prefiero no decir</option>
+                    </select>
+                    <label for="registro-nacimiento">Selecciona tu fecha de nacimiento</label>
+                    <input type="date" name="registro-nacimiento" id="registro-nacimiento" required>
+                    <p>Al hacer clic en crear cuenta, aceptas las <a href="">Condiciones de uso</a> y el <a href="">Aviso de privacidad</a> de Neca Sports.</p>
+                    <button type="submit" class="registro-crearCuenta">Crear cuenta</button>
+                    <div class="registro-tieneCuenta">
+                        <p>¿Ya tienes cuenta?</p>
+                        <a href="/usuario/login.html">Inicia sesión aquí</a>
+                    </div>                  
                 </form>
-            </div>
-            <div class="login-div-crearCuenta">
-                <div class="login-div-crearCuenta-linea">
-                    <div class="login-div-crearCuenta-linea1">
-                        <p>hola soy falco siu</p>
-                    </div>
-                    <p>¿Nuevo en Neca Sports?</p>
-                    <div class="login-div-crearCuenta-linea2">
-                        <p>hola soy falco siu</p>
-                    </div>
-                </div>
-                <a href="/usuario/registro.html" class="login-div-crearCuenta-nuevo">Crear tu cuenta de Neca Sports</a>
             </div>
         </div>
     </section>

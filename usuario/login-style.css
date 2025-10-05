@@ -38,7 +38,7 @@
     a:hover{
         border-bottom: #00B394 1px solid;
     }
-    input{
+    input,select{
         padding: 2px 10px;
         height: 35px;
         border-radius: 8px;
@@ -47,6 +47,9 @@
         outline: none;
     }
     input:focus{
+        border: 2px solid #00B394; 
+    }
+    select:focus{
         border: 2px solid #00B394; 
     }
 }
@@ -103,4 +106,28 @@
         align-items: center;
         flex-wrap: wrap;
     }
+}
+.registro-crearCuenta{
+    background: linear-gradient(to right, #005C9F, #00B194,#009162);
+        width: 100%;
+        height: 50px;
+        color: aliceblue;
+        font-size: 18px;
+        border: 3px solid transparent;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+}
+.registro-tieneCuenta{
+    a{
+        font-size: 12px;
+    }
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
 }
