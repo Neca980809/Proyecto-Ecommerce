@@ -13,15 +13,15 @@ header{
     background-color: #0077B6;
     padding:7px 10px;
     border-radius: 10px 0;
-    width: 100%;
+    width: 98.5%;
     position: fixed;
     position: sticky;
     top:0px;
     z-index: 10;
     ul{
-    list-style-type: none;
-    padding-inline-start: 0px;
-}
+        list-style-type: none;
+        padding-inline-start: 0px;
+    }
 }
 a{
     text-decoration: none;
@@ -93,7 +93,12 @@ form{
 .header-parte1-buscador-buscar-circulo:hover{
     transform: scale(1.2);
 }
-
+.header-parte1-hamburguesa{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    color: transparent;
+}
 .header-parte2{
     display: flex;
     justify-content: space-between;
@@ -145,28 +150,28 @@ form{
 .header-parte2-usuarioYcompras-li:hover{
     background-color: rgba(255, 255, 255, 0.3);
 }
-
 .sectionImagenes-div{
-    
-    width: 90vw;
-    height:60vh;
-    background-color: red;
-    margin: 0 auto;
+    height: 50vh;
+    img{
+        width: 98.5vw;
+    }
 }
 
 /*parte de categorias seleccionadas*/
 .div-destacado-subtitulo{
         max-width: 700px;
         margin: 50px auto;
+        
     h2{
-        color: RGB(42,157,142) ;
+        color: white ;
         text-align: center;
         font-size: 30px;
         margin: 10px;
     }  
     p{
         text-align: center;
-        color: #5079A5;
+        color: #bdbdbd;
+        font-size: 18px;
     }
 }
 
@@ -725,5 +730,11 @@ form{
     background-color: white;
     i{
         color: black;
+    }
+}
+@media (max-width: 780px) {
+    .header-parte1-hamburguesa{
+        position: relative;
+        color: white;
     }
 }

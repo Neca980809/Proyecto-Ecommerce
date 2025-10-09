@@ -1,0 +1,310 @@
+
+.detalleProductor{
+    padding: 0 10px;
+}
+.detalleProducto-parteArriba{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:15px;
+}
+.detalleProducto-parteArriba-miniImagenes{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 10px;
+    img{
+        border: #2070AB 2px solid;
+        transition: border 0.3s ease-in-out;
+    }
+    img:hover{
+        border: #00B194 2px solid;
+    }
+}
+.detalleProducto-parteArriba-imagenPrincipal{
+    flex-grow: 1;
+    max-width: 38vw;
+    min-width: 250px;
+    img{
+        max-width: 38vw;
+        min-width: 300px;
+    }
+}
+.detalleProducto-parteArriba-detalle{
+    flex-grow: 2;
+    max-width: 43vw;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:15px;
+    .detalleProducto-parteArriba-detalle-tipo{
+        label{
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .detalleProducto-parteArriba-detalle-tipo-img{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            gap:5px;
+            button{
+                background-color: white;
+                height: 100px;
+                width: 100px;
+                padding: 0;
+                border: #005C9F 3px solid;
+                transition: border 0.5s ease-in-out;
+                border-radius: 10px;
+                margin: 5px;
+            }
+            button:hover{
+                border: #00B194 3px solid;
+            }
+            img{
+                height: 90px;
+                width: 90px;
+            }
+        }
+    }
+    .detalleProducto-parteArriba-detalle-nuevo{
+        width: 150px;
+        margin: 0;
+        text-align: center;
+        padding-bottom:7px;
+        padding-top:7px;
+        border-radius: 25px;
+        font-weight: 700;
+        color: aliceblue;
+        background: linear-gradient(to right, #005C9F, #00B194,#009162);
+    }
+    h2{
+        font-size: 40px;
+        margin: 0;
+    }
+    .detalleProducto-parteArriba-detalle-descripcion{
+        font-size: 20px;
+        color: #567986;
+        margin: 0;
+    }
+    .detalleProducto-parteArriba-detalle-precio{
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:12px;
+        flex-wrap: wrap;
+        .detalleProducto-parteArriba-detalle-precio-actual{
+            margin: 0;
+            font-size: 42px;
+            font-weight: 700;
+        }
+        .detalleProducto-parteArriba-detalle-precio-viejo{
+            margin: 0;
+            font-size: 24px;
+            color: #507986;
+        }
+    }
+    .detalleProducto-parteArriba-detalle-estrellasYreseñas{
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+        flex-wrap: wrap;
+        align-items: center;
+        p{
+            margin: 0;
+        }
+        .detalleProducto-parteArriba-detalle-estrellasYreseñas-estrellas{
+            color: #FDC700;
+            font-size: 22px;
+        }
+        .detalleProducto-parteArriba-detalle-estrellasYreseñas-numReseñas{
+            color: #507986;
+            font-size: 20px;
+        }
+    }
+    .detalleProducto-parteArriba-detalle-talla{
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+        flex-wrap: wrap;
+        .detalleProducto-parteArriba-detalle-talla-label{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap:10px;
+            flex-wrap: wrap;
+            label{
+                font-size: 14px;
+                font-weight: 700;
+            }
+            a{
+                color:#005C9F;
+                text-decoration: underline transparent 1px;
+                transition: text-decoration 0.3s ease-in-out;
+            }
+            a:hover{
+                text-decoration: underline #005C9F 1px;
+            }
+        }
+        .detalleProducto-parteArriba-detalle-talla-tallasDisponibles{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            button{
+                background-color: white;
+                height: 60px;
+                width: 140px;
+                border-radius: 10px;
+                border: #D7E0E0 2px solid;
+                transition:border 0.3s ease-in;
+            }
+            button:hover{
+                border: #005C9F 2px solid;
+            }
+        }
+    }
+    .detalleProducto-parteArriba-detalle-cantidad{
+        label{
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .detalleProducto-parteArriba-detalle-cantidad-botones{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: start;
+            align-items: center;
+            gap:15px;
+            button{
+                height: 35px;
+                width: 35px;
+                background-color: white;
+                font-size: 18px;
+                border-radius: 10px;
+                border: #D7E0E0 2px solid;
+                transition:border 0.3s ease-in;
+            }
+            button:hover{
+                border: #005C9F 2px solid;
+            }
+        }
+    }
+    .detalleProducto-parteArriba-detalle-agregarCarrito{
+        width: 99%;
+        height: 55px;
+
+        button{
+            margin: 0px auto;
+            background: linear-gradient(to right, #005C9F, #00B194,#009162);
+            width: 90%;
+            height: 50px;
+            color: aliceblue;
+            font-size: 18px;
+            border: 3px solid transparent;
+            border-radius: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            transform: scale(1);
+            transition: transform 0.4s ease-in-out;
+        }
+        button:hover{
+            transform: scale(1.07);
+        }
+    }
+    .detalleProducto-parteArriba-detalle-servicios{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: nowrap;
+        .detalleProducto-parteArriba-detalle-servicios-div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 27%;
+            .detalleProducto-parteArriba-detalle-servicios-div-icon{
+                border-radius: 50%;
+                height: 60px;
+                width: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+            }
+            .detalleProducto-parteArriba-detalle-servicios-envio-icon{
+                color: #025798;
+                background-color: #E7EEF6;
+            }
+            .detalleProducto-parteArriba-detalle-servicios-devoluciones-icon{
+                color: #05B69A;
+                background-color: #E8F8F5;
+            }
+            .detalleProducto-parteArriba-detalle-servicios-garantia-icon{
+                color: #178361;
+                background-color: #E5F4EF;
+            }
+            label{
+                font-size: 14px;
+                font-weight: 700;
+            }
+            p{
+                margin: 0;
+                text-align: center;
+                font-size: 12px;
+                color: #717F8C;
+            }
+        }
+    } 
+}
+.detalleProducto-parteAbajo{
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+    h3{
+        color: #1D5683;
+        padding-bottom: 5px;
+        text-decoration: #009162 underline 2px ;
+    }
+    p{
+        margin: 0;
+        color: #6A7066;
+    }
+    li{
+        color:#025798;
+    }
+    span{
+        color: #009162;
+        font-weight: 700;
+    }
+    .detalleProducto-parteAbajo-reseñas-reseña{
+        padding: 7px 10px;
+        background-color: #EAF4F5;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .detalleProducto-parteAbajo-reseñas-reseña-nombreYfecha{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            label{
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+        .detalleProducto-parteAbajo-reseñas-reseña-estrellas{
+            color: #FDC700;
+        }
+    }
+}

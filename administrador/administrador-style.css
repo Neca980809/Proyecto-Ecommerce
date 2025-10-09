@@ -1,0 +1,287 @@
+header{
+    width: 98.5VW;
+    min-width: 900px;
+}
+.administradorProductos{
+    margin: 0px 30px;
+}
+.administradorProductos-titulo{
+    h1{
+        color: #0077B6;
+    }
+    p{
+        color: #4A6268;
+    }
+}
+.administradorProductos-indicadores{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    .administradorProductos-indicadores-tarjeta{
+        min-width: 100px;
+        border-radius: 10px;
+        border: #D7E0E0 solid 2px;
+        padding: 7px 10px;
+        h2{
+            font-size: 16px;
+            color: #567986;
+            font-weight: 500;
+        }
+        p{
+            color: #005C9F;
+            font-size:23px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-weight: 700;
+        };
+    }
+}
+.administradorProductos-filtrosYagregarProducto-buscadorYfiltroEstado{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap:15px;
+}
+.administradorProductos-filtrosYagregarProducto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap:15px;
+    form{
+        background-color: white;
+    }
+    .administradorProductos-filtrosYagregarProducto-buscador{
+        border: #D7E0E0 solid 2px;
+        border-radius: 5px;
+        padding:3px 10px;
+        .administradorProductos-filtrosYagregarProducto-buscador-buscar{
+            background-color: white;
+            border-color: transparent;
+        }
+        input{
+            min-width: 350px;
+            font-size: 15px;
+            border-color: transparent;
+            padding: 5px;
+        }
+        input:focus {
+            outline: none;
+        }
+        i{
+            color: #577986;
+            font-size: 17px;
+        }
+    }
+    .administradorProductos-filtrosYagregarProducto-buscador:focus-within{
+            border: #005C9F 2px solid;
+    }
+    .administradorProductos-filtrosYagregarProducto-filtroEstado{
+        padding:7px 10px;
+        border-radius: 10px;
+        min-width: 150px;
+        border: #D7E0E0 solid 2px;
+        select{
+            border: none;
+            min-width: 150px;
+            font-size: 15px;
+        }
+        option:hover{
+            background-color: #005C9F;
+        }
+    }
+    .administradorProductos-filtrosYagregarProducto-agregar-button{
+        padding:7px 10px;
+        font-size: 17px;
+        min-width: 250px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        color: white;
+        background-color: #00B194;
+        transition: background-color 0.3s ease-in;
+        border-radius: 10px;
+        p{
+            margin: 0;
+        }
+    }
+    .administradorProductos-filtrosYagregarProducto-agregar-button:hover{
+        background-color: #005C9F;
+    }
+}
+.administradorProductos-tabla{
+   margin-top: 30px;
+}
+.administradorProductos-tabla-imagenes{
+   width: 11.35vw;
+}
+.administradorProductos-tabla table{
+    border: #D7E0E0 2px solid;
+    border-collapse: collapse; /* 🔥 une los bordes */
+    tr{
+        border-top: #D7E0E0 2px solid;
+    }
+}
+.administradorProductos-tabla table tr:nth-child(1):hover{
+    background-color: white;
+}
+.administradorProductos-tabla table tr:hover{
+    background-color: #F2F5F5;
+}
+.administradorProductos-tabla table tr td{
+    padding: 2px 5px;
+}
+.administradorProductos-tabla table tr td:nth-child(1){
+    width: 11.35vw;
+}
+.administradorProductos-tabla table tr td:nth-child(2){
+    width: 20vw;
+        h3{
+        margin: 5px;
+    }
+    p{
+        margin: 3px;
+        color: #567986;
+    }
+    .administradorProductos-tabla-tags{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 7px;
+        a{
+            padding: 3px 6px;
+            border-radius: 5px;
+            background-color: #D7E0E0;
+            color: #567986;
+        }
+    }
+}
+.administradorProductos-tabla table tr td:nth-child(3){
+    width: 6.81vw;
+    font-weight: 700;
+}
+.administradorProductos-tabla table tr td:nth-child(4){
+    width: 6.81vw;
+    p{
+        margin: 3px;
+        padding: 1px 6px;
+        background-color: white;
+        color: #005C9F;
+        border: #005C9F 2px solid;
+        text-align: center;
+        border-radius: 6px;
+    }
+}
+.administradorProductos-tabla table tr td:nth-child(5){
+    width: 27.24vw;
+      display: -webkit-box;          /* activa el modo flexible */
+  -webkit-line-clamp: 10;         /* número máximo de líneas */
+  -webkit-box-orient: vertical;  /* orientación vertical */
+  overflow: hidden;              /* oculta el texto sobrante */
+  text-overflow: ellipsis;       /* agrega los "..." */
+  p, li{
+    color: #567986;
+    font-size: 15px;
+  }
+  span{
+    color: #00B194;
+    font-weight: 600;
+  }
+}
+.administradorProductos-tabla table tr td:nth-child(6){
+    width: 6.81vw;
+    p{
+    color: #567986;
+    font-size: 15px;
+  }
+}
+.administradorProductos-tabla table tr td:nth-child(7){
+    width: 6.81vw;
+    p{
+        margin: 3px;
+        padding: 1px 6px;
+        background-color: #00B194;
+        color: white;
+        border: #00B194 2px solid;
+        text-align: center;
+        border-radius: 6px;
+    }
+}
+.administradorProductos-tabla table tr td:nth-child(8){
+    width: 6.81vw;
+    div{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        
+        i{
+            color: #567986;
+            padding: 3px;
+            background-color: transparent;
+            border-radius: 6px;
+            transition: color 0.3s ease-in-out, background-color 0.6s ease-out;
+        }
+        i:hover{
+            color: white;
+            background-color: #005C9F;
+        }
+    }
+}
+
+.administradorProductos-paginacion{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap:50px;
+    .administradorProductos-paginacion-cantidaPagina{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap:10px;
+        p{
+            color: #567986;
+            font-size: 15px;
+        }
+        select,form{
+            background-color: white;
+        }
+        
+    }
+    .administradorProductos-paginacion-numPagina{
+        width: 600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        gaP:10px;
+        button{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            gap: 7px;
+            border-radius: 7px;
+            border: #858585 2px solid;
+            height: 25px;
+            p{
+                margin: 0;
+                color: #858585;
+                font-size: 15px;
+            }
+        }
+        button:hover{
+            background-color: #D7E0E0;
+            color: white;
+        }
+    }
+}
