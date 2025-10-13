@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/producto/detalle-style.css">
     <title>NECA sports-Detalle de producto</title>
 </head>
 <body>
@@ -13,7 +14,9 @@
             <a href="/index.html">
                 <img src="/images/logo.png" alt="logo Neca sports">
             </a>
-            
+            <div class="header-parte1-hamburguesa">
+                <i class="fa-solid fa-bars"></i>
+            </div>
             <div class="header-parte1-buscador">
                 <form>
                     <input type="text" class="header-parte1-buscador-barra" placeholder="Buscar Productos, marcas, deporte y mas..." >
@@ -62,9 +65,11 @@
                     <li><a href="/marcas/index.html" class="header-parte2-nav">Marcas</a></li>
                     <li><a href="/deporte/index.html" class="header-parte2-nav">Deporte</a></li>
                     <li><a href="/categoria/index.html" class="header-parte2-nav">Categoria</a></li>
+                    <li><a href="/administrador/adminProduct.html" class="header-parte2-nav">Admin product</a></li>
                 </ul>
             </nav>
         </div>
+        <!-- seccion de header hamburguesa-->
     </header>
 <!-- seccion de detalle de producto-->
     <section class="detalleProductor">
@@ -72,15 +77,20 @@
             <div class="detalleProducto-parteArriba-miniImagenes">
                 <img src="/images/index/algunosProductos/Adidas-realMadrid-1.png" alt="Camiseta Real Madrid Local">
                 <img src="/images/index/algunosProductos/Adidas-realMadrid-2.png" alt="Camiseta Real Madrid Visitante">
+                <img src="/images/index/algunosProductos/Adidas-realMadrid-3.png" alt="Camiseta Real Madrid de fente y atras">
             </div>
             <div class="detalleProducto-parteArriba-imagenPrincipal">
                 <img src="/images/index/algunosProductos/Adidas-realMadrid-1.png" alt="Camiseta Real Madrid Local">
+                <!-- NOTA:Poner el icono de corazon"favoritos" -->
             </div>
             <div class="detalleProducto-parteArriba-detalle">
                 <p class="detalleProducto-parteArriba-detalle-nuevo">Poducto Nuevo</p>
                 <h2>Camiseta Real Madrid 24/25</h2>
-                <p>Camiseta de Real Madrid temporada actual</p>
-                <p class="detalleProducto-parteArriba-detalle-precio">$300.965</p>
+                <p class="detalleProducto-parteArriba-detalle-descripcion">Camiseta de Real Madrid temporada actual</p>
+                <div class="detalleProducto-parteArriba-detalle-precio">
+                    <p class="detalleProducto-parteArriba-detalle-precio-actual">$300.965</p>
+                    <p class="detalleProducto-parteArriba-detalle-precio-viejo" style="text-decoration: line-through;" >$300.965</p>
+                </div>
                 <div class="detalleProducto-parteArriba-detalle-estrellasYreseñas">
                     <div class="detalleProducto-parteArriba-detalle-estrellasYreseñas-estrellas">
                         <i class="fa-solid fa-star"></i>
@@ -88,17 +98,22 @@
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-regular fa-star"></i>
                         <i class="fa-regular fa-star"></i>
-                        <p>3.0</p>
                     </div>
-                    <div class="detalleProducto-parteArriba-detalle-estrellasYreseñas-reseñas">
+                    <p class="detalleProducto-parteArriba-detalle-estrellasYreseñas-numReseñas">(3.0)</p>
+                    <div class="detalleProducto-parteArriba-detalle-estrellasYreseñas-numReseñas">
                         <p>1 reseñas</p>
                     </div>
                 </div>
                 <div class="detalleProducto-parteArriba-detalle-tipo"><!--este tipo puede ser color, o en este caso camiseta local o visitante-->
                     <label>Tipo indumentaria:local</label>
-                    <div class="detalleProducto-parteArriba-detalle-tipo">
-                        <img src="/images/index/algunosProductos/Adidas-realMadrid-1.png" alt="Camiseta Real Madrid Local" class="detalleProducto-parteArriba-detalle-tipo-1">
-                        <img src="/images/index/algunosProductos/Adidas-realMadrid-2.png" alt="Camiseta Real Madrid Visitante" class="detalleProducto-parteArriba-detalle-tipo-2">
+                    <div class="detalleProducto-parteArriba-detalle-tipo-img">
+                        <button type="button">
+                            <img src="/images/index/algunosProductos/Adidas-realMadrid-1.png" alt="Camiseta Real Madrid Local" class="detalleProducto-parteArriba-detalle-tipo-1">
+                        </button>
+                        <button type="button">
+                            <img src="/images/index/algunosProductos/Adidas-realMadrid-2.png" alt="Camiseta Real Madrid Visitante" class="detalleProducto-parteArriba-detalle-tipo-2">
+                        </button>
+                        
                     </div>
                 </div>
                 <div class="detalleProducto-parteArriba-detalle-talla">
@@ -125,25 +140,28 @@
                         <button type="button">+</button>
                     </div>
                 </div>
-                <button type="button" class="detalleProducto-parteArriba-detalle-agregarCarrito">Agregar al carrito</button>
+                <div class="detalleProducto-parteArriba-detalle-agregarCarrito">
+                    <button type="button">Agregar al carrito</button>
+                </div>
+
                 <div class="detalleProducto-parteArriba-detalle-linea"></div>
                 <div class="detalleProducto-parteArriba-detalle-servicios">
-                    <div class="detalleProducto-parteArriba-detalle-servicios-envio">
-                        <div class="detalleProducto-parteArriba-detalle-servicios-envio-icon">
+                    <div class="detalleProducto-parteArriba-detalle-servicios-envio detalleProducto-parteArriba-detalle-servicios-div">
+                        <div class="detalleProducto-parteArriba-detalle-servicios-envio-icon detalleProducto-parteArriba-detalle-servicios-div-icon">
                             <i class="fa-solid fa-truck-fast"></i>
                         </div>
                         <label>Envío gratis</label>
                         <p>En compras +$150.000</p>
                     </div>
-                    <div class="detalleProducto-parteArriba-detalle-servicios-devoluciones">
-                        <div class="detalleProducto-parteArriba-detalle-servicios-devoluciones-icon">
+                    <div class="detalleProducto-parteArriba-detalle-servicios-devoluciones detalleProducto-parteArriba-detalle-servicios-div">
+                        <div class="detalleProducto-parteArriba-detalle-servicios-devoluciones-icon detalleProducto-parteArriba-detalle-servicios-div-icon">
                             <i class="fa-solid fa-rotate-left"></i>
                         </div>
                         <label>Devoluciones</label>
                         <p>30 días gratis</p>
                     </div>
-                    <div class="detalleProducto-parteArriba-detalle-servicios-garantia">
-                        <div class="detalleProducto-parteArriba-detalle-servicios-garantia-icon">
+                    <div class="detalleProducto-parteArriba-detalle-servicios-garantia detalleProducto-parteArriba-detalle-servicios-div">
+                        <div class="detalleProducto-parteArriba-detalle-servicios-garantia-icon detalleProducto-parteArriba-detalle-servicios-div-icon">
                             <i class="fa-solid fa-shield"></i>
                         </div>
                         <label>Garantía</label>
@@ -171,10 +189,13 @@
                 </ul>
             </div>
             <div class="detalleProducto-parteAbajo-reseñas">
-                <div class="detalleProducto-parteAbajo-reseñas-1">
-                    <h3>Reseñas</h3>
-                    <label>Nick Esteban Cohecha Arango</label>
-                    <div class="detalleProducto-parteAbajo-reseñas-1-estrellas">
+                <h3>Reseñas</h3>
+                <div class="detalleProducto-parteAbajo-reseñas-reseña">
+                    <div class="detalleProducto-parteAbajo-reseñas-reseña-nombreYfecha">
+                        <label>Nick Esteban Cohecha Arango</label>
+                        <p>Hace 1 días</p>
+                    </div>
+                    <div class="detalleProducto-parteAbajo-reseñas-reseña-estrellas">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>

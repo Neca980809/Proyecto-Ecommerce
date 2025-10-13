@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/administrador/administrador-style.css">
+    <title>NECA sports-Admin Product</title>
+</head>
+<body>
+    <header>
+        <div class="header header-parte1">
+            <a href="/index.html">
+                <img src="/images/logo.png" alt="logo Neca sports">
+            </a>
+            <div class="header-parte1-hamburguesa">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="header-parte1-buscador">
+                <form>
+                    <input type="text" class="header-parte1-buscador-barra" placeholder="Buscar Productos, marcas, deporte y mas..." >
+                    <button type="button" class="header-parte1-buscador-buscar">
+                        <div class="header-parte1-buscador-buscar-circulo">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </button>
+                </form>
+            </div>
+            <div class="header-parte2-usuarioYcompras">
+                    <ul class="header-parte2-usuarioYcompras-ul">
+                        <li>
+                            <a class="header-parte2-usuarioYcompras-compras header-parte2-usuarioYcompras-li" href="/compras/index.html">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="header-parte2-usuarioYcompras-carrito header-parte2-usuarioYcompras-li" href="/carrito/index.html">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="header-parte2-usuarioYcompras-favoritos header-parte2-usuarioYcompras-li" href="/favoritos/index.html">
+                                <i class="fa-solid fa-thumbs-up"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="header-parte2-usuarioYcompras-notificacion header-parte2-usuarioYcompras-li" href="/notificacion/index.html">
+                                <i class="fa-solid fa-bell"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="header-parte2-usuarioYcompras-usuario header-parte2-usuarioYcompras-li" href="/usuario/login.html">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </li>
+                    </ul>
+            </div>         
+        </div>
+        <div class="header header-parte2">
+            <nav class="header-parte2-nav">
+                <ul class="header-parte2-nav-ul">
+                    <li><a href="/novedades/index.html" class="header-parte2-nav">Novedades</a></li>
+                    <li><a href="/ofertas/index.html" class="header-parte2-nav">Ofertas</a></li>
+                    <li><a href="/marcas/index.html" class="header-parte2-nav">Marcas</a></li>
+                    <li><a href="/deporte/index.html" class="header-parte2-nav">Deporte</a></li>
+                    <li><a href="/categoria/index.html" class="header-parte2-nav">Categoria</a></li>
+                    <li><a href="/administrador/adminProduct.html" class="header-parte2-nav">Admin product</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- seccion de admin product-->
+    <section>
+        <div class="administradorProductos">
+            <div class="administradorProductos-titulo">
+                <h1>Gestión de Productos</h1>
+                <p>Administra el catálogo de productos de Neca SPORT</p>
+            </div>
+            <div class="administradorProductos-indicadores">
+                <div class="administradorProductos-indicadores-tarjeta">
+                    <h2>Total Productos</h2>
+                    <p>8</p>
+                </div>
+                <div class="administradorProductos-indicadores-tarjeta">
+                    <h2>Activos</h2>
+                    <p>8</p>
+                </div>
+                <div class="administradorProductos-indicadores-tarjeta">
+                    <h2>Borradores</h2>
+                    <p>0</p>
+                </div>
+                <div class="administradorProductos-indicadores-tarjeta">
+                    <h2>Stock Bajo</h2>
+                    <p>0</p>
+                </div>
+                <div class="administradorProductos-indicadores-tarjeta">
+                    <h2>Vendidos hoy</h2>
+                    <p>3</p>
+                </div>
+            </div>
+            <div class="administradorProductos-filtrosYagregarProducto">
+                <div class="administradorProductos-filtrosYagregarProducto-buscadorYfiltroEstado">
+                    <div class="administradorProductos-filtrosYagregarProducto-buscador">
+                        <form>
+                            <button type="button" class="administradorProductos-filtrosYagregarProducto-buscador-buscar">
+                                <div class="administradorProductos-filtrosYagregarProducto-buscador-buscar-cuadro">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                            </button>
+                            <input type="text" class="administradorProductos-filtrosYagregarProducto-buscador-buscar-barra" placeholder="Buscar productos por tag" >
+                        </form>
+                    </div>
+                    <div class="administradorProductos-filtrosYagregarProducto-filtroEstado">
+                        <form>
+                            <select name="administradorProductos-filtrosYagregarProducto-filtroEstado-select" id="administradorProductos-filtrosYagregarProducto-filtroEstado-select">
+                                <option value="todos">Todos los estados</option>
+                                <option value="activos">Activo</option>
+                                <option value="borradores">Borrador</option>
+                                <option value="archivados">Archivado</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="administradorProductos-filtrosYagregarProducto-agregar">
+                    <button type="button" class="administradorProductos-filtrosYagregarProducto-agregar-button">
+                        <p>+</p>
+                        <p>Agregar Producto</p>
+                    </button>
+                </div>
+            </div>
+            <div class="administradorProductos-tabla">
+                <table>
+                    <tr>
+                        <th class="administradorProductos-tabla-imagenes">Imagenes</th>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Tallas</th>
+                        <th>Descripcion y Caracteristicas</th>
+                        <th>Fecha ingreso</th>
+                        <th>Estado</th>
+                        <th>Edicion</th>
+                    </tr>
+                    <tr>
+                        <td class="administradorProductos-tabla-imagenes"><!-- Nota, poner todas las imagenes en cascada-->
+                            <img src="/images/index/algunosProductos/Adidas-realMadrid-1.png" alt="Camiseta Real Madrid 24/25" class="administradorProductos-tabla-imagenes">
+                        </td>
+                        <td>
+                            <h3>Camiseta Real Madrid 24/25</h3>
+                            <p>Camiseta de Real Madrid temporada actual</p>
+                            <div class="administradorProductos-tabla-tags">
+                                <a href="">Futbol</a><a href="">Adidas</a><a href="">Real Madrid</a><a href="">Nuevo</a><a href="">Camiseta</a>
+                            </div>
+                        </td>
+                        <td>$300.965</td>
+                        <td>
+                            <p>XS</p>
+                            <p>S</p>
+                            <p>M</p>
+                            <p>L</p>
+                            <p>XL</p>
+                            <p>XXL</p>
+                            <p>3XL</p>
+                            <p>4XL</p>
+                        </td>
+                        <td>
+                            <p>Viste con orgullo los colores del Real Madrid con la camiseta oficial de esta temporada. Diseñada para ofrecer el máximo confort y rendimiento, combina tecnología transpirable con un diseño elegante que rinde homenaje a la historia del club. Su tejido ligero mantiene la frescura en cada movimiento, mientras los detalles dorados y el escudo bordado reflejan la grandeza y la pasión del equipo más laureado del mundo.</p>
+                            <ul>
+                                <li><span>Material:</span> 100% poliéster reciclado de alto rendimiento.</li>
+                                <li><span>Tecnología AEROREADY:</span> absorbe la humedad y mantiene la piel seca.</li>
+                                <li><span>Escudo del Real Madrid bordado</span> en el pecho.</li>
+                                <li><span>Corte regular</span> ajuste cómodo y libertad de movimiento.</li>
+                                <li><span>Cuello en V</span> con detalles inspirados en la historia del club.</li>
+                                <li><span>Tejido liviano y transpirable</span> para máxima comodidad.</li>
+                                <li><span>Fabricacion:</span> con materiales sostenibles.</li>
+                                <li><span>temporada:</span> 2025, con detalles dorados y líneas modernas.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p>10/7/2025</p>
+                        </td>
+                        <td><p>Activo</p></td>
+                        <td>
+                            <div>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-pencil"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="administradorProductos-tabla-imagenes"><!-- Nota, poner todas las imagenes en cascada-->
+                            <img src="/images/index/algunosProductos/Nike-MercurialVapor16-1.png" alt="Nike Mercurial Vapor 16 Academy" class="administradorProductos-tabla-imagenes">
+                        </td>
+                        <td>
+                            <h3>Nike Mercurial Vapor 16 Academy</h3>
+                            <p>Guayos de fútbol MG de corte low</p>
+                            <div class="administradorProductos-tabla-tags">
+                                <a href="">Futbol</a><a href="">Nike</a><a href="">Guayos</a><a href="">Academy</a><a href="">Mercurial</a>
+                            </div>
+                        </td>
+                        <td>$539.950</td>
+                        <td>
+                            <p>38</p>
+                            <p>39</p>
+                            <p>40</p>
+                            <p>40.5</p>
+                            <p>41</p>
+                            <p>41.5</p>
+                        </td>
+                        <td>
+                            <p>¿Quieres llevar tu velocidad al siguiente nivel? Confeccionamos estos tacos Academy con una unidad Air Zoom mejorada en el talón. Te dan la propulsión necesaria para abrirte paso a través de la línea de fondo. El resultado son los Mercurial más responsivos que hemos creado hasta la fecha, para que puedas dictar el ritmo durante todo el partido.</p>
+                            <ul>
+                                <li><span>Diseño ligero y de perfil bajo</span> para mayor libertad de movimiento.</li>
+                                <li><span>Tecnología NikeSkin</span> con textura en relieve para mejor control del balón.</li>
+                                <li><span>Unidad Air Zoom</span> en el talón que brinda impulso y amortiguación al correr.</li>
+                                <li><span>Ajuste ceñido tipo Knit</span> envuelve el pie con sensación firme y cómoda.</li>
+                                <li><span>Suela multisuperficie (MG)</span> con tacos en forma de chevron para tracción y estabilidad.</li>
+                                <li><span>Materiales resistentes y duraderos</span> ideales para entrenamientos y partidos.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p>10/7/2025</p>
+                        </td>
+                        <td><p>Activo</p></td>
+                        <td>
+                            <div>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-pencil"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="administradorProductos-tabla-imagenes"><!-- Nota, poner todas las imagenes en cascada-->
+                            <img src="/images/index/algunosProductos/venum-UFCSportsCap-1.png" alt="Gorra UFC Fight Night" class="administradorProductos-tabla-imagenes">
+                        </td>
+                        <td>
+                            <h3>UFC Fusion by Venum Authentic Fight Night</h3>
+                            <p>Gorra Deportiva - Champion</p>
+                            <div class="administradorProductos-tabla-tags">
+                                <a href="">UFC</a><a href="">Gorra</a><a href="">Artes Marciales Mixtas</a><a href="">Venum</a>
+                            </div>
+                        </td>
+                        <td>$65.999</td>
+                        <td>
+                            <p>Unica</p>
+                        </td>
+                        <td>
+                            <p>Demuestra tu pasión por el octágono con la gorra oficial UFC Venum. Fabricada en sarga de algodón resistente, ofrece comodidad, transpirabilidad y un estilo deportivo auténtico. Su diseño oficial con logotipos bordados y cierre ajustable tipo snapback garantiza un ajuste perfecto y un look moderno, ideal para entrenar o usar a diario.</p>
+                            <ul>
+                                <li>Diseño oficial de la colección <span>UFC x Venum</span>.</li>
+                                <li>Tejido de sarga de algodón con perforaciones para mayor <span>transpirabilidad</span>, ideal para días calientes.</li>
+                                <li>Sistema de cierre <span>snapback ajustable</span>, que permite adaptar la gorra al tamaño de tu cabeza cómodamente.</li>
+                                <li><span>Detalles metálicos o efectos mate</span> en los logos oficiales que le dan un acabado premium.</li>
+                                <li><span>Producto unisex, talla única</span> gracias al cierre ajustable.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p>10/7/2025</p>
+                        </td>
+                        <td><p>Activo</p></td>
+                        <td>
+                            <div>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-pencil"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="administradorProductos-tabla-imagenes"><!-- Nota, poner todas las imagenes en cascada-->
+                            <img src="/images/index/algunosProductos/underarmour-MorralHustle6.0Backpack-1.png" alt="Morral Para Training Hustle 6.0" class="administradorProductos-tabla-imagenes">
+                        </td>
+                        <td>
+                            <h3>Morral Para Training Hustle 6.0</h3>
+                            <p></p>
+                            <div class="administradorProductos-tabla-tags">
+                                <a href="">Under Armour</a><a href="">Morral</a><a href="">Accesorios deportivos</a><a href="">Training</a>
+                            </div>
+                        </td>
+                        <td>$269.900</td>
+                        <td>
+                            <p>Unica</p>
+                        </td>
+                        <td>
+                            <p>Mochila urbana resistente con estilo deportivo y máxima funcionalidad. Pensada para quienes necesitan llevar laptop, ropa, botella de agua y más, de forma organizada y protegida, incluso bajo lluvias ligeras. Perfecta para universidad, gimnasio o uso diario.</p>
+                            <ul>
+                                <li>Tecnología <span>UA Storm</span> que repele el agua para mantener tus cosas secas.</li>
+                                <li>Compartimento <span>acolchado</span> para laptop de hasta 16″.</li>
+                                <li><span>Compartimento secundario</span> que también sirve para guardar zapatos, ropa de entrenamiento o artículos húmedos.</li>
+                                <li><span>Bolsillos laterales</span> para botella de agua (hasta ~32 oz) y bolsillo frontal seguro para objetos de valor.</li>
+                                <li><span>Material:</span> 100 % poliéster, durable.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p>10/7/2025</p>
+                        </td>
+                        <td><p>Activo</p></td>
+                        <td>
+                            <div>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-pencil"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="administradorProductos-tabla-imagenes"><!-- Nota, poner todas las imagenes en cascada-->
+                            <img src="/images/index/algunosProductos/Adidas-ChaquetadeportivaClassicsSST-1.png" alt="Chaqueta deportiva Classics SST" class="administradorProductos-tabla-imagenes">
+                        </td>
+                        <td>
+                            <h3>Chaqueta deportiva Classics SST</h3>
+                            <p></p>
+                            <div class="administradorProductos-tabla-tags">
+                                <a href="">Adidas</a><a href="">Chaqueta</a><a href="">Casual</a><a href="">Ropa deportiva</a>
+                            </div>
+                        </td>
+                        <td>$598.465</td>
+                        <td>
+                            <p>XS</p>
+                            <p>S</p>
+                            <p>M</p>
+                            <p>L</p>
+                        </td>
+                        <td>
+                            <p>Chaqueta deportiva “track” con diseño clásico de Adidas, perfecta para estilo urbano, salir o entrenar. Combina materiales reciclados con detalles emblemáticos como las 3 rayas y el logo Trefoil, con cierre completo al frente para proteger del frío o llevarla abierta para un look relajado.</p>
+                            <ul>
+                                <li><span>Slim fit</span> ajuste ceñido para silueta moderna.</li>
+                                <li>Tejido tipo interlock suave, mezcla de <span>material reciclado + algodón</span> (≈ 70 % poliéster reciclado / 30 % algodón).</li>
+                                <li><span>Cierre frontal</span> de cremallera completa + cuello tipo “stand up” acanalado.</li>
+                                <li><span>Puños y dobladillo acanalados</span> para mejor ajuste y retención del calor.</li>
+                                <li><span>Uso diario</span> combina estilo retro + practicidad.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p>10/7/2025</p>
+                        </td>
+                        <td><p>Activo</p></td>
+                        <td>
+                            <div>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-pencil"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="administradorProductos-tabla-imagenes"><!-- Nota, poner todas las imagenes en cascada-->
+                            <img src="/images/index/algunosProductos/Adidas-CamisetadeTenis ClubKids-1.png" alt="Camiseta de Tenis Club Kids" class="administradorProductos-tabla-imagenes">
+                        </td>
+                        <td>
+                            <h3>Camiseta de Tenis Club Kids</h3>
+                            <p></p>
+                            <div class="administradorProductos-tabla-tags">
+                                <a href="">Adidas</a><a href="">Camiseta</a><a href="">Niños</a><a href="">Casual</a><a href="">Ropa deportiva</a>
+                            </div>
+                        </td>
+                        <td>$119.950</td>
+                        <td>
+                            <p>5-6años</p>
+                            <p>7-8años</p>
+                            <p>9-10años</p>
+                            <p>11-12años</p>
+                        </td>
+                        <td>
+                            <p>La Camiseta de Tenis Club Kids está pensada para los pequeños tenistas que disfrutan cada partido con energía y estilo. Su tejido ligero y transpirable mantiene la frescura incluso en los entrenamientos más intensos, mientras que su diseño moderno ofrece total libertad de movimiento. Ideal para la cancha o para el día a día, combina comodidad, durabilidad y un toque deportivo que inspira confianza en cada golpe.</p>
+                            <ul>
+                                <li><span>Material</span> poliéster suave y ligero para mayor comodidad.</li>
+                                <li><span>Tecnología transpirable</span> ayuda a mantener la piel fresca y seca.</li>
+                                <li><span>Corte regular</span> ofrece libertad de movimiento en cada partido.</li>
+                                <li><span>Diseño deportivo</span> ideal para entrenamientos y competencias.</li>
+                                <li><span>Fácil de lavar</span> conserva el color y la forma tras varios usos.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p>10/7/2025</p>
+                        </td>
+                        <td><p>Activo</p></td>
+                        <td>
+                            <div>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-pencil"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="administradorProductos-tabla-imagenes"><!-- Nota, poner todas las imagenes en cascada-->
+                            <img src="/images/index/algunosProductos/Nike-AirJordan4RM-1.png" alt="Air Jordan 4RM" class="administradorProductos-tabla-imagenes">
+                        </td>
+                        <td>
+                            <h3>Air Jordan 4RM</h3>
+                            <p></p>
+                            <div class="administradorProductos-tabla-tags">
+                                <a href="">Nike</a><a href="">Zapillas</a><a href="">Jordan</a><a href="">Casual</a><a href="">Ropa deportiva</a>
+                            </div>
+                        </td>
+                        <td>$598.465</td>
+                        <td>
+                            <p>6</p>
+                            <p>6.5</p>
+                            <p>7</p>
+                            <p>7.5</p>
+                            <p>8</p>
+                            <p>8.5</p>
+                            <p>9</p>
+                            <p>10</p>
+                        </td>
+                        <td>
+                            <p>Las Air Jordan 4RM reinventan un clásico con un diseño más urbano y funcional. Mantienen la esencia icónica de las AJ4, combinando cuero premium y lona resistente para ofrecer durabilidad y estilo. Su amortiguación Max Air brinda comodidad en cada paso, mientras la suela de goma asegura tracción y soporte en el uso diario. Un modelo versátil, moderno y lleno de la herencia Jordan.</p>
+                            <ul>
+                                <li>Estilo inspirado en las icónicas <span>AJ4</span> reinventadas para uso diario, con diseño robusto y moderno.</li>
+                                <li>Sistema de <span>amortiguación Max Air</span> en el talón que proporciona suavidad al pisar y buen soporte para un uso prolongado.</li>
+                                <li><span>Suela de goma</span> con buen agarre para uso urbano, calle, caminar mucho.</li>
+                                <li><span>Detalles de marca clásicos</span> logotipo Jumpman, logo Nike-Air en talón, lengüeta y suela.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p>10/7/2025</p>
+                        </td>
+                        <td><p>Activo</p></td>
+                        <td>
+                            <div>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-pencil"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="administradorProductos-tabla-imagenes"><!-- Nota, poner todas las imagenes en cascada-->
+                            <img src="/images/index/algunosProductos/Nike-SportswearClub-1.png" alt="Air Jordan 4RM" class="administradorProductos-tabla-imagenes">
+                        </td>
+                        <td>
+                            <h3>Nike Sportswear Club</h3>
+                            <p>Conjunto de tejido Knit de poliéster para hombre</p>
+                            <div class="administradorProductos-tabla-tags">
+                                <a href="">Nike</a><a href="">Sudaderas</a><a href="">Casual</a><a href="">Ropa deportiva</a>
+                            </div>
+                        </td>
+                        <td>$499.950</td>
+                        <td>
+                            <p>S</p>
+                            <p>M</p>
+                            <p>7</p>
+                            <p>L</p>
+                            <p>XL</p>
+                        </td>
+                        <td>
+                            <p>El Nike Sportswear Club Knit combina comodidad y estilo en un conjunto pensado para el uso diario. Fabricado con tejido de punto (knit) de poliéster suave, ofrece una sensación ligera y agradable al contacto con la piel. Su diseño moderno y deportivo es perfecto tanto para entrenar como para relajarte, manteniendo siempre un look limpio y versátil con el sello clásico de Nike.</p>
+                            <ul>
+                                <li><span>Material</span> 100% poliéster knit de alta calidad.</li>
+                                <li><span>Tejido transpirable y ligero</span> para mayor comodidad durante todo el día.</li>
+                                <li><span>Ajuste regular</span> ofrece libertad de movimiento sin perder el estilo.</li>
+                                <li><span>Incluye chaqueta y pantalón</span> con cierre frontal y cintura elástica ajustable.</li>
+                                <li><span>Clásico de Nike</span> con el logotipo bordado y detalles minimalistas.</li>
+                                <li><span>Fácil de cuidar</span> resistente al lavado y mantiene su forma.</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p>10/7/2025</p>
+                        </td>
+                        <td><p>Activo</p></td>
+                        <td>
+                            <div>
+                                <i class="fa-solid fa-eye"></i>
+                                <i class="fa-solid fa-pencil"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="administradorProductos-paginacion">
+                <div class="administradorProductos-paginacion-cantidaPagina">
+                    <p>Mostrar</p>
+                    <form>
+                        <select name="administradorProductos-paginacion-cantidaPagina-paginacion" id="administradorProductos-paginacion-cantidaPagina-paginacion">
+                            <option value="10">10</option>
+                            <option value="20">25</option>
+                            <option value="100">100</option>
+                        </select>
+                    </form>
+                    <p>de 8 productos</p>
+                </div>
+                <div class="administradorProductos-paginacion-numPagina">
+                    <button type="button">
+                        <i class="fa-solid fa-left-long"></i>
+                        <p>Anterior</p>
+                    </button>
+                    <button type="button">1</button>
+                    <button type="button">
+                        <p>Siguiente</p>
+                        <i class="fa-solid fa-right-long"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion de footer-->
+     <footer>
+        <div class="footer">
+            <div class="footer-principales">
+                <section class="footer-principales-section">
+                    <h2>Compra y Descubre</h2>
+                    <ul class="footer-principales-section-ul">
+                        <li><a href="">Calzado Deportivo</a></li>
+                        <li><a href="">Ropa Deportiva</a></li>
+                        <li><a href="">Accesorios</a></li>
+                        <li><a href="">Equipamiento</a></li>
+                        <li><a href="">Ofertas Especiales</a></li>
+                    </ul>
+                </section>
+                <section class="footer-principales-section">
+                    <h2>Soporte</h2>
+                    <ul class="footer-principales-section-ul">
+                        <li><a href="">Centro de Servicio</a></li>
+                        <li><a href="">Guía de Tallas</a></li>
+                        <li><a href="">Envíos y Devoluciones</a></li>
+                        <li><a href="">Términos y Condiciones</a></li>
+                        <li><a href="">Métodos de Pago</a></li>
+                    </ul>
+                </section>
+                <section class="footer-principales-section">
+                    <h2>Acerca de Nosotros</h2>
+                    <ul class="footer-principales-section-ul">
+                        <li><a href="">Nuestra Historia</a></li>
+                        <li><a href="">Política de Privacidad</a></li>
+                        <li><a href="">Responsabilidad Social</a></li>
+                        <li><a href="">Sustentabilidad</a></li>
+                        <li><a href="">Trabaja con Nosotros</a></li>
+                    </ul>
+                </section>
+                <section class="footer-principales-section">
+                    <h2>Contacto</h2>
+                    <ul class="footer-principales-section-ul">
+                        <li><a href="">Servicio de Soporte</a></li>
+                        <li><a href="">Correo Electrónico</a></li>
+                        <li><a href="">Teléfono</a></li>
+                    </ul>
+                </section>
+                <section class="footer-principales-section">
+                    <h2>Síguenos</h2>
+                    <ul class="footer-principales-section-siguenos">
+                        <li>
+                            <a href="" class="footer-principales-section-siguenos-whatsapp">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/nickesteban.cohechaarango" target="_blank" class="footer-principales-section-siguenos-facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/esteban_cohechaa" target="_blank" class="footer-principales-section-siguenos-instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/nick-esteban-cohecha-arango-80848024b" target="_blank" class="footer-principales-section-siguenos-linkedin">
+                               <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Neca980809" target="_blank" class="footer-principales-section-siguenos-github">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="footer-copyright">
+                    <p>Copyright © 2025 - 2025 NECA sports. Todos los derechos reservados</p>
+                    <p>Colombia/Español</p>
+            </div>
+        </div>
+     </footer>
+</body>
+</html>
