@@ -151,27 +151,32 @@ form{
     background-color: rgba(255, 255, 255, 0.3);
 }
 .sectionImagenes-div{
-    max-height: 50vh;
+    /* max-height: 50vh; */
     img{
         width: 98.5vw;
     }
+    position:relative;
 }
 
 /*parte de categorias seleccionadas*/
 .div-destacado-subtitulo{
+        position:absolute;
+        bottom:1vw;
         max-width: 700px;
         margin: 50px auto;
-        
+        width: 100%;
     h2{
         color: white ;
         text-align: center;
         font-size: 30px;
-        margin: 10px;
+        margin: 1vw;
+        width: 97VW;
     }  
     p{
         text-align: center;
         color: #bdbdbd;
         font-size: 18px;
+        width: 97VW;
     }
 }
 
@@ -179,15 +184,14 @@ form{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .destacado{
     width: 80vw;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
+    gap: 20px;
 }
 .destacado a{
     padding: 5px 35px;
@@ -274,8 +278,8 @@ form{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;   
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
+    gap: 20px;
 }
 .marca{
     img{
@@ -556,6 +560,7 @@ form{
 }
 .TodosServicios-div-servicios{
     display: flex;
+    flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
     align-items: center;
@@ -734,7 +739,7 @@ form{
 }
 
 
-@media (max-width: 780px) {
+@media (max-width: 785px) {
 
 
     header:hover{
