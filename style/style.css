@@ -35,6 +35,12 @@ a:hover{
 form{
     background-color: #0077B6;
 }
+#menuAmburguesa{
+    display: none;
+}
+#labelAmburguesa{
+    display: none;
+}
 .header-parte1{
     display: flex;
     flex-direction: row;
@@ -93,12 +99,7 @@ form{
 .header-parte1-buscador-buscar-circulo:hover{
     transform: scale(1.2);
 }
-.header-parte1-hamburguesa{
-    font-size: 30px;
-    color: white;
-    position: absolute;
-    color: transparent;
-}
+
 .header-parte2{
     display: flex;
     justify-content: space-between;
@@ -740,18 +741,30 @@ form{
 
 
 @media (max-width: 785px) {
-
-
-    header:hover{
-            overflow: visible;
-            
+    header{
+        height: 100%;
     }
 
-
-
-    header{
-        height: 20px;
-        overflow: hidden;
+    #labelAmburguesa{
+        display: block;
+    }
+    .header-parte1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .header-parte1-buscador{
+        display: none;
+    }
+    .header-parte2-usuarioYcompras{
+        display: none;
+    }
+    .header-parte2{
+        display: none;
+    }
+    .header-parte1-hamburguesa label{
+        display: block;
     }
     .header-parte1-hamburguesa{
         position: absolute;
@@ -760,51 +773,72 @@ form{
         color: white;
     }
 
-
-    .header-parte1,.header-parte1-buscador{
+    header:has(#menuAmburguesa:checked){
+        display: flex;
         flex-direction: column;
-        width: 100%;
-        background-color: #0077B6;
-        .header-parte1-buscador-barra{
-                width: 100%;
-            
+        gap: 10px;
+        .header-parte1{
+            display:  grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "logo haburguesa"
+                                "buscador buscador"
+                                "usuario usuario";
+            #logo{
+                grid-area: logo;
+            }
+            label{
+                grid-area: haburguesa;
+                justify-self: end;
+            }
+
+            .header-parte1-buscador{
+                display: block;
+                grid-area: buscador;
+                
+                .header-parte1-buscador-barra{
+                    width: 70vw;
+                }
+
+            }
+            .header-parte2-usuarioYcompras{
+                display: block;
+                grid-area: usuario;
+                .header-parte2-usuarioYcompras-ul{
+                    justify-content: space-between ; 
+                }
+            }
+        
+        
         }
-        .header-parte2-usuarioYcompras{
-            width: 100%;
-            .header-parte2-usuarioYcompras-ul{
-                flex-direction: row;
-                justify-content: space-around;
+
+        .header-parte2{
+            display: block;
+            background-color: #F8F8F8;
+            .header-parte2-nav-ul{
                 
                 
+                flex-direction: column;
+                gap: 25px;
+                justify-content: flex-start;
+                li{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    
+                    a{
+                    height: 30px;
+                    padding: 5px 15px;
+                    color: #1A1A1A;
+                    }
+                }
+                li:hover{
+                    background-color: #DFF1EE;
+                    color: #09B598;
+                    border-radius: 10px;
+
+                }
             }
         }
     }
-    .header-parte2-nav{
-        width: 100%;
-    }
-    .header-parte2-nav-ul{
-        flex-direction: column;
-        justify-content: space-between;
-        gap:5px;
-    }
-    .header-parte2{
-        background-color: white;
-        .header-parte2-nav-ul li a{
-            color: black;
-            height: 50px;
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            padding-left: 7px;
-        }
-        .header-parte2-nav-ul li:hover{
-            border-bottom: transparent;
-        }
-        .header-parte2-nav-ul li a:hover{
-            background-color: #DFF1EE;
-            color: #09B598;
-            border-radius: 10px;
-        }
-    }
-}
-    
+     
+}  
